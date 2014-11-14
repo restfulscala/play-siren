@@ -1,0 +1,1 @@
+Integration library for siren-scala and the Play Framework.
