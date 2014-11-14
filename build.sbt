@@ -4,7 +4,7 @@ import play.PlayScala
 versionWithGit
 
 // Optionally:
-git.baseVersion := "0.1"
+git.baseVersion := "0.1.0"
 
 name := "play-siren"
 
@@ -21,7 +21,7 @@ val root = project in file(".") enablePlugins PlayScala
 scalaVersion := "2.11.4"
 
 StandardLayout.settings
-licenses := Seq("The MIT License" -> url("http://opensource.org/licenses/MIT"))
+licenses := Seq("MIT" -> url("http://opensource.org/licenses/MIT"))
 
 seq(bintraySettings:_*)
 
