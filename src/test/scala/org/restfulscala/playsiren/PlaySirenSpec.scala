@@ -8,8 +8,6 @@ import play.api.mvc._
 import play.api.test.FakeRequest
 import play.twirl.api.Html
 
-import scalaz.NonEmptyList
-
 class PlaySirenSpec extends PlaySpec with Results with ScalaFutures {
 
   import org.scalatest.prop.TableDrivenPropertyChecks._
@@ -29,7 +27,7 @@ class PlaySirenSpec extends PlaySpec with Results with ScalaFutures {
   }
   "Writeable[RootEntity]" must {
     "allow responding with Siren RootEntity values" in {
-      val entity = Entity.RootEntity(links = Some(NonEmptyList(Link(NonEmptyList("self"), "http://example.com"))))
+      val entity = Entity.RootEntity(links = Some(List(Link(List("self"), "http://example.com"))))
       object controller extends Controller {
         def index() = Action {
           Ok(entity)

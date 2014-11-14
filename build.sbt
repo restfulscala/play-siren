@@ -11,7 +11,7 @@ name := "play-siren"
 organization := "org.restfulscala"
 
 libraryDependencies ++= Seq(
-  "com.yetu" %% "siren-scala" % "0.3.0",
+  "com.yetu" %% "siren-scala" % "0.4.0",
   "org.scalatest" %% "scalatest" % "2.2.1" % "test",
   "org.scalatestplus" %% "play" % "1.2.0" % "test"
 )
