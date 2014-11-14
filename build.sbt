@@ -4,7 +4,7 @@ import play.PlayScala
 versionWithGit
 
 // Optionally:
-git.baseVersion := "0.1.0"
+git.baseVersion := "0.2.0"
 
 name := "play-siren"
 
