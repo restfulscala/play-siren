@@ -3,7 +3,6 @@ import play.PlayScala
 
 versionWithGit
 
-// Optionally:
 git.baseVersion := "0.3.0"
 
 name := "play-siren"
@@ -21,10 +20,17 @@ val root = project in file(".") enablePlugins PlayScala
 scalaVersion := "2.11.4"
 
 StandardLayout.settings
+
 licenses := Seq("MIT" -> url("http://opensource.org/licenses/MIT"))
 
-seq(bintraySettings:_*)
+bintray.Plugin.bintraySettings
 
 bintray.Keys.bintrayOrganization in bintray.Keys.bintray := Some("restfulscala")
 
 bintray.Keys.packageLabels in bintray.Keys.bintray := Seq("scala", "rest", "play")
+
+scoverage.ScoverageSbtPlugin.instrumentSettings
+
+org.scoverage.coveralls.CoverallsPlugin.coverallsSettings
+
+CoverallsPlugin.CoverallsKeys.coverallsTokenFile := ".coveralls.token"
