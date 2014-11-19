@@ -32,5 +32,3 @@ bintray.Keys.packageLabels in bintray.Keys.bintray := Seq("scala", "rest", "play
 scoverage.ScoverageSbtPlugin.instrumentSettings
 
 org.scoverage.coveralls.CoverallsPlugin.coverallsSettings
-
-CoverallsPlugin.CoverallsKeys.coverallsTokenFile := Some(".coveralls.token")

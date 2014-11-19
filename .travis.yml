@@ -8,3 +8,4 @@ notifications:
   email:
     recipients:
       - dwestheide@googlemail.com
+script: "sbt coveralls"
